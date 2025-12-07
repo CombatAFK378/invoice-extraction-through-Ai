@@ -1,0 +1,18 @@
+# PDF Processing
+pymupdf
+
+# OCR Engines  
+paddlepaddle
+paddleocr
+easyocr
+
+# Image Processing
+opencv-python
+pillow
+numpy
+
+# Gemini API
+google-generativeai
+
+# Utilities
+python-dateutil
