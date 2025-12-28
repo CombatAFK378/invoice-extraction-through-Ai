@@ -150,10 +150,15 @@ python retry_failed.py
 
 ### **Output Structure**
 
+<pre>
+Output Structure
 stage3_csv/
-├── invoices.csv # Invoice header data
-├── line_items.csv # Individual product line items
-├── vendors.csv # Vendor/supplier information
-├── customers.csv # Customer/buyer information
-└── metadata.json # Processing metadata
+│
+├── invoices.csv        # Invoice header data
+├── line_items.csv      # Individual product line items
+├── vendors.csv         # Vendor / supplier information
+├── customers.csv       # Customer / buyer information
+└── metadata.json       # Processing metadata
+</pre>
+
 
