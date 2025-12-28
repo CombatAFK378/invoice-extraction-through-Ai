@@ -162,3 +162,239 @@ stage3_csv/
 </pre>
 
 
+### **Database Schema**
+
+#### **invoices.csv**
+| Field | Type | Description |
+|-------|------|-------------|
+| invoice_id | int | Primary key |
+| invoice_number | str | Invoice number |
+| invoice_date | date | Invoice date |
+| vendor_id | int | Foreign key → vendors |
+| customer_id | int | Foreign key → customers |
+| total | float | Total amount |
+| subtotal | float | Subtotal before tax |
+| tax | float | Tax amount |
+
+#### **line_items.csv**
+| Field | Type | Description |
+|-------|------|-------------|
+| line_item_id | int | Primary key |
+| invoice_id | int | Foreign key → invoices |
+| product_id | str | Product code |
+| description | str | Product description |
+| quantity | float | Quantity ordered |
+| unit_price | float | Price per unit |
+| total_price | float | Line total |
+
+#### **vendors.csv**
+| Field | Type | Description |
+|-------|------|-------------|
+| vendor_id | int | Primary key |
+| name | str | Vendor name |
+| address | str | Vendor address |
+| phone | str | Phone number |
+
+#### **customers.csv**
+| Field | Type | Description |
+|-------|------|-------------|
+| customer_id | int | Primary key |
+| name | str | Customer name |
+| address | str | Customer address |
+| phone | str | Phone number |
+
+---
+
+## 📈 Dashboard Features
+
+### **5 Interactive Pages**
+
+1. **🏠 Dashboard** - Overview metrics, revenue trends, top products
+2. **📋 Query Invoices** - Filter by vendor, date range, export results
+3. **📦 Products** - Product analytics, purchase frequency, revenue
+4. **🔍 Search** - Search products by name/description
+5. **📄 Invoice Lookup** - Detailed invoice view with line items
+
+### **Launch Dashboard**
+streamlit run app.py
+
+
+Access at: http://localhost:8501
+
+---
+
+
+---
+
+## 🎯 Performance Metrics
+
+### **Stage 1: OCR Extraction**
+- **Success Rate**: 100% (32/32 invoices)
+- **Average Confidence**: 92.5%
+- **Average Time**: 2.1s per invoice
+- **OCR Method**: PaddleOCR (primary), EasyOCR (fallback)
+
+### **Stage 2: LLM Extraction**
+- **Success Rate**: 96.9% (31/32 first run, 100% after retry)
+- **Average Time**: 3.2s per invoice
+- **Model**: Groq GPT-OSS 120B
+- **Tokens Used**: ~85,000 total
+
+### **Stage 3: Data Export**
+- **Invoices**: 32
+- **Line Items**: 186
+- **Unique Vendors**: 2
+- **Unique Customers**: 2-3
+- **Export Time**: <1s
+
+---
+
+## 🔬 Technical Details
+
+### **OCR Strategy**
+1. **Primary**: PaddleOCR (deep learning, high accuracy)
+2. **Fallback**: EasyOCR (if PaddleOCR fails)
+3. **Preprocessing**: Automatic image enhancement
+4. **Confidence Threshold**: 70%
+
+### **LLM Prompt Engineering**
+- Structured JSON output schema
+- Field validation rules
+- Error handling and retries
+- Context window: 8192 tokens
+
+### **Data Normalization**
+- Automatic duplicate detection
+- Foreign key relationships
+- Type conversion and validation
+- Metadata tracking
+
+---
+
+## 🚧 Known Issues & Limitations
+
+### **Current Limitations**
+1. **Vendor/Customer Duplicates**: Address variations create duplicate records (10 vendor rows → 2 actual vendors)
+   - *Reason*: OCR inconsistencies + source document formatting differences
+   - *Solution*: Fuzzy matching or manual deduplication (Stage 4 improvement)
+
+2. **Two-Page Invoices**: Currently processes first page only
+   - *Solution*: Multi-page processing (planned enhancement)
+
+3. **Handwritten Text**: OCR struggles with handwriting
+   - *Solution*: Use invoices with printed text
+
+### **Data Quality Notes**
+- OCR may misread similar characters (e.g., "1" vs "I", "0" vs "O")
+- Address formatting inconsistencies are preserved (by design)
+- Some invoices may require manual review
+
+---
+
+## 🔮 Future Enhancements
+
+### **Planned Features**
+- [ ] Multi-page invoice support
+- [ ] Fuzzy matching for vendor/customer deduplication
+- [ ] Batch upload via dashboard
+- [ ] REST API for integration
+- [ ] Docker containerization
+- [ ] Database backend (PostgreSQL)
+- [ ] Email notification system
+- [ ] OCR confidence visualization
+- [ ] Multi-language support
+- [ ] Invoice template learning
+
+---
+
+## 📝 Example Output
+
+### **Sample Invoice Processing**
+
+**Input**: `Copy of ARPFIINVOEBTCHLASER (1).pdf`
+
+**Stage 1 Output** (OCR):
+{
+"metadata": {
+"filename": "Copy of ARPFIINVOEBTCHLASER (1).pdf",
+"processing_time_seconds": 2.14,
+"confidence": 0.925
+},
+"ocr_results": {
+"method": "paddleocr",
+"raw_text": "INVOICE 379183\nDate: 08/05/2025\n..."
+}
+}
+
+
+**Stage 2 Output** (LLM Extraction):
+{
+"invoice_number": "379183",
+"invoice_date": "2025-08-05",
+"vendor": {
+"name": "Pacific Food Importers Inc.",
+"address": "18620 80th Court South, Building F, Kent, WA 98032"
+},
+"line_items": [
+{
+"product_id": "102950",
+"description": "FLOUR POWER",
+"quantity": 8.0,
+"unit": "CS",
+"unit_price": 24.063,
+"total_price": 192.5
+}
+],
+"total": 596.94
+}
+
+
+**Stage 3 Output**: Normalized CSV tables (see Data Schema section)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**GitHub**: [@CombatAFK378](https://github.com/CombatAFK378)
+
+---
+
+## 🙏 Acknowledgments
+
+- **Groq** - Ultra-fast LLM inference
+- **PaddlePaddle** - PaddleOCR framework
+- **Streamlit** - Dashboard framework
+- **Plotly** - Visualization library
+
+---
+
+## 📧 Contact
+
+For questions or support, please open an issue on GitHub.
+
+---
+
+**⭐ If you find this project helpful, please consider giving it a star!**
+
+
+
+
+
