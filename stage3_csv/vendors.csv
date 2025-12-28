@@ -1,0 +1,12 @@
+vendor_id,name,address,phone,email
+1,Pacific Food Importers Inc.,"18620 80th Court South, Building F, Kent, WA 98032",(206) 682-0923,
+2,Pacific Food Importers Inc.,"18620 80th COURT SOUTH; BLDG: F, KENT, WA 98032",(206) 682-0923,
+3,Pacific Food Importers Inc.,"18620 80th Court South; Bldg: F, Kent, WA 98032",(206) 682-0923,
+4,Pacific Food Importers Inc.,"18620 80th Court South, Bldg F, Kent, WA 98032",(206) 682-0923,
+5,Frank's Quality Produce,"3800 Ist Ave S, Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net
+6,Frank's (Quality Produce,"3800 Ist Ave, Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net
+7,Frank's Quality Produce,"3800 Ist Ave S
+Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net
+8,Frank's (Quality Produce,"Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net
+9,Frank's Quality Produce,"Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net
+10,Frank's (Quality Produce,"3800 1st Ave, Seattle, WA 98134",206-624-9754,warehouse@franksproduce.net

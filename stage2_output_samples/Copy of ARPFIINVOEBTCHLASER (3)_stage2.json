@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "source_file": "Copy of ARPFIINVOEBTCHLASER (3).pdf",
+    "stage1_confidence": 0.8823,
+    "processed_at": "2025-12-07T17:58:14.820270"
+  },
+  "invoice_data": {
+    "invoice_number": "378483",
+    "order_number": "6775",
+    "invoice_date": "2025-07-22",
+    "order_date": "2025-07-21",
+    "due_date": "2025-07-29",
+    "vendor": {
+      "name": "Pacific Food Importers Inc.",
+      "address": "18620 80th Court South; Bldg: F, Kent, WA 98032",
+      "phone": "(206) 682-0923",
+      "email": null
+    },
+    "customer": {
+      "name": "WESTMANS BAGEL & CAFFE DBA",
+      "address": "2925 223rd Pl SW, Seattle, WA 98105",
+      "phone": "352-502-8078",
+      "customer_id": null
+    },
+    "amounts": {
+      "subtotal": 573.77,
+      "tax": 2.86,
+      "discount": 0.0,
+      "freight": 0.0,
+      "total": 576.63
+    },
+    "line_items": [
+      {
+        "product_id": "102950",
+        "description": "FLOUR POWER",
+        "quantity": 10.0,
+        "unit": "CS",
+        "unit_price": 24.063,
+        "total_price": 240.63
+      },
+      {
+        "product_id": "151011",
+        "description": "MALT POWDER DIASTATIC+",
+        "quantity": 1.0,
+        "unit": "BG",
+        "unit_price": 116.848,
+        "total_price": 116.85
+      },
+      {
+        "product_id": "33425",
+        "description": "JALAPENO SLICED 6 #10",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 51.329,
+        "total_price": 51.33
+      },
+      {
+        "product_id": "160908",
+        "description": "GLOVE NITRILE MEDIUM 10 x 100",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 29.78,
+        "total_price": 29.78
+      },
+      {
+        "product_id": "191928",
+        "description": "EGGS LIQUID 2 x 20 LB",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 95.225,
+        "total_price": 95.23
+      },
+      {
+        "product_id": "3210",
+        "description": "MILK OAT 12 x 32 Oz",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 39.948,
+        "total_price": 39.95
+      }
+    ],
+    "payment_terms": "7 DAYS",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "export_date": "2025-12-28T18:25:37.991622",
+  "total_vendors": 10,
+  "total_customers": 13,
+  "total_invoices": 32,
+  "total_line_items": 186,
+  "files": {
+    "vendors.csv": "Unique vendors with contact information",
+    "customers.csv": "Unique customers with contact information",
+    "invoices.csv": "Invoice headers with totals and references",
+    "line_items.csv": "Individual line items for each invoice"
+  },
+  "relationships": {
+    "invoices.vendor_id": "\u2192 vendors.vendor_id",
+    "invoices.customer_id": "\u2192 customers.customer_id",
+    "line_items.invoice_id": "\u2192 invoices.invoice_id"
+  }
+}

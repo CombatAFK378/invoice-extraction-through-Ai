@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "source_file": "Copy of ARPFIINVOEBTCHLASER (1).pdf",
+    "stage1_confidence": 0.8956,
+    "processed_at": "2025-12-07T17:55:18.815582"
+  },
+  "invoice_data": {
+    "invoice_number": "379183",
+    "order_number": "445630",
+    "invoice_date": "2025-08-05",
+    "order_date": "2025-08-04",
+    "due_date": "2025-08-12",
+    "vendor": {
+      "name": "Pacific Food Importers Inc.",
+      "address": "18620 80th Court South, Building F, Kent, WA 98032",
+      "phone": "(206) 682-0923",
+      "email": null
+    },
+    "customer": {
+      "name": "Westmans Bagel & Caffe DBA TETIA LLC",
+      "address": "2925 223rd Pl SW, Brier, WA 98036",
+      "phone": "352-502-8078",
+      "customer_id": "6775"
+    },
+    "amounts": {
+      "subtotal": 596.94,
+      "tax": 0.0,
+      "discount": 0.0,
+      "freight": 0.0,
+      "total": 596.94
+    },
+    "line_items": [
+      {
+        "product_id": "102950",
+        "description": "FLOUR POWER",
+        "quantity": 8.0,
+        "unit": "CS",
+        "unit_price": 24.063,
+        "total_price": 192.5
+      },
+      {
+        "product_id": "157301",
+        "description": "SESAME SEEDS WHITE+",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 80.25,
+        "total_price": 80.25
+      },
+      {
+        "product_id": "33425",
+        "description": "JALAPENO SLICED",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 51.329,
+        "total_price": 51.33
+      },
+      {
+        "product_id": "78825",
+        "description": "CURRANTS",
+        "quantity": 1.0,
+        "unit": "EA",
+        "unit_price": 29.203,
+        "total_price": 29.2
+      },
+      {
+        "product_id": "3210",
+        "description": "MILK OAT",
+        "quantity": 3.0,
+        "unit": "CS",
+        "unit_price": 39.948,
+        "total_price": 119.84
+      },
+      {
+        "product_id": "109950",
+        "description": "SUGAR GRANULATED CANE",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 28.59,
+        "total_price": 28.59
+      },
+      {
+        "product_id": "191928",
+        "description": "EGGS LIQUID",
+        "quantity": 1.0,
+        "unit": "CS",
+        "unit_price": 95.225,
+        "total_price": 95.23
+      }
+    ],
+    "payment_terms": "7 DAYS",
+    "currency": "USD"
+  }
+}

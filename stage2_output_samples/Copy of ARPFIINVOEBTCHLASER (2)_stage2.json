@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "source_file": "Copy of ARPFIINVOEBTCHLASER (2).pdf",
+    "stage1_confidence": 0.8843,
+    "processed_at": "2025-12-07T17:57:48.736624"
+  },
+  "invoice_data": {
+    "invoice_number": "378793",
+    "order_number": "445193",
+    "invoice_date": "2025-07-29",
+    "order_date": "2025-07-28",
+    "due_date": null,
+    "vendor": {
+      "name": "Pacific Food Importers Inc.",
+      "address": "18620 80th Court South, Building F, Kent, WA 98032",
+      "phone": "(206) 682-0923",
+      "email": null
+    },
+    "customer": {
+      "name": "Westmans Bagel & Caffe DBA TETIA LLC",
+      "address": "2925 223rd Pl SW, Seattle, WA 98105",
+      "phone": "352-502-8078",
+      "customer_id": "6775"
+    },
+    "amounts": {
+      "subtotal": 751.41,
+      "tax": 3.48,
+      "discount": 0.0,
+      "freight": 0.0,
+      "total": 754.89
+    },
+    "line_items": [
+      {
+        "product_id": "102950",
+        "description": "FLOUR POWER",
+        "quantity": 10,
+        "unit": "CS",
+        "unit_price": 24.063,
+        "total_price": 240.63
+      },
+      {
+        "product_id": "154551",
+        "description": "ONION MINCED",
+        "quantity": 1,
+        "unit": "CS",
+        "unit_price": 113.33,
+        "total_price": 113.33
+      },
+      {
+        "product_id": "157301",
+        "description": "SESAME SEEDS WHITE+",
+        "quantity": 1,
+        "unit": "CS",
+        "unit_price": 80.25,
+        "total_price": 80.25
+      },
+      {
+        "product_id": "109609",
+        "description": "SALT KOSHER COARSE",
+        "quantity": 2,
+        "unit": "CS",
+        "unit_price": 75.076,
+        "total_price": 150.15
+      },
+      {
+        "product_id": "160878",
+        "description": "GLOVE NITRILE XL",
+        "quantity": 1,
+        "unit": "CS",
+        "unit_price": 36.25,
+        "total_price": 36.25
+      },
+      {
+        "product_id": "158609",
+        "description": "YEAST INSTANT RED LBL SAF",
+        "quantity": 1,
+        "unit": "CS",
+        "unit_price": 130.8,
+        "total_price": 130.8
+      }
+    ],
+    "payment_terms": "7 DAYS",
+    "currency": "USD"
+  }
+}

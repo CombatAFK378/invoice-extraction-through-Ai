@@ -26,21 +26,19 @@ env/
 ENV/
 .venv
 
-# Project specific - PRIVATE DATA (not pushed to GitHub)
+# Private Data
+pdfs/
 data/
 stage1_output/
+stage2_output/
+!stage2_output/sample_*.json
 
-# But ALLOW sample folders (these WILL be pushed)
-!samples/
-!samples/*.pdf
-!samples_output/
-!samples_output/*.json
+# Environment Variables
+.env
+.env.local
+.env.*.local
 
-# Ignore all JSON files except in samples_output
-*.json
-!samples_output/*.json
-
-# OCR Model downloads (large files)
+# OCR Models
 *.pth
 *.onnx
 model/
@@ -66,17 +64,12 @@ desktop.ini
 
 # Logs
 *.log
+debug_*.txt
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Jupyter Notebook
+# Jupyter
 .ipynb_checkpoints
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
