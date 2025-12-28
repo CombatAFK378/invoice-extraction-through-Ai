@@ -96,10 +96,12 @@ cd invoice-extraction-through-Ai
 ### **2. Create Virtual Environment**
 Windows
 python -m venv venv
+
 venv\Scripts\activate
 
 Linux/Mac
 python3 -m venv venv
+
 source venv/bin/activate
 
 
@@ -393,6 +395,7 @@ For questions or support, please open an issue on GitHub.
 ---
 
 **⭐ If you find this project helpful, please consider giving it a star!**
+
 
 
 
